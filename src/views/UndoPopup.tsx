@@ -25,7 +25,7 @@ const UndoPopup: React.FC<myProps> = props => {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
   const onCancel = () => {
-    dispatch(undoActions.undoIsVisible());
+    dispatch(undoActions.undoIsNotVisible());
     dispatch(undoActions.clearStateUsersToRecover());
     dispatch(buttonsActions.buttonsClear());
     dispatch(bulkDeleteActions.clear());

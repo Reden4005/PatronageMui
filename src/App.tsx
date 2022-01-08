@@ -111,7 +111,7 @@ const App: React.FC = () => {
       usersToRecover
     );
     dispatch(undoActions.clearStateUsersToRecover());
-    dispatch(undoActions.undoIsVisible());
+    dispatch(undoActions.undoIsNotVisible());
     dispatch(buttonsActions.buttonsClear());
     dispatch(bulkDeleteActions.clear());
     navigate("/");

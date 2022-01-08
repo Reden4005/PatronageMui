@@ -16,7 +16,6 @@ export default function BasicTable() {
 
   return (
     <DataGrid
-      autoHeight={true}
       sx={{
         height: "100%",
         width: "100%",
@@ -30,9 +29,6 @@ export default function BasicTable() {
         },
         "& .MuiSvgIcon-root": {
           color: "#B958A5",
-        },
-        "& .Mui-selected": {
-          background: "rgba(254, 209, 239, 0.2) !important",
         },
       }}
       rows={actualListOfUsers}

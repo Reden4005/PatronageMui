@@ -57,8 +57,12 @@ const undoSlice = createSlice({
       }
     },
     undoIsVisible(state) {
-      state.undoIsVisible = !state.undoIsVisible;
+      state.undoIsVisible = true;
     },
+    undoIsNotVisible(state) {
+      state.undoIsVisible = false;
+    },
+
     clearState(state) {
       state.deletedUsers = [];
     },

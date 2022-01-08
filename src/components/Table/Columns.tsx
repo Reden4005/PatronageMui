@@ -13,7 +13,7 @@ const Columns: () => GridColDef[] = () => {
   const style = {
     background: "#fdfaf4",
     color: "#B958A5",
-    mr: 2,
+    mr: 1,
     ":hover": { background: "#B958A5", color: "#fdfaf4" },
   };
 
@@ -21,13 +21,13 @@ const Columns: () => GridColDef[] = () => {
     {
       field: "name",
       headerName: "Name",
-      flex: 1,
+      flex: 0.5,
       renderCell: params => <div>{params.value}</div>,
     },
     {
       field: "lastName",
       headerName: "Lastname",
-      flex: 1,
+      flex: 0.5,
       renderCell: params => (
         <div
           style={{

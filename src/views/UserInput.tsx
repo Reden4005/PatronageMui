@@ -186,9 +186,8 @@ const UserForm: React.FC<UserFormProps> = ({ visible, onCreate, onCancel }) => {
                       sx={{
                         width: "30%",
                         alignSelf: "flex-start",
-                        borderTop: "1px solid rgba(0, 0, 0, 0.28)",
-                        borderRadius: "5%",
                       }}
+                      variant="standard"
                       placeholder="YYYY-MM-DD"
                       name="dateOfBirth"
                       onChange={handleInputChange}
@@ -220,6 +219,7 @@ const UserForm: React.FC<UserFormProps> = ({ visible, onCreate, onCancel }) => {
                 id="user-gender"
                 label="Gender"
                 name="gender"
+                variant="standard"
                 onChange={handleGenderChange}
                 value={formValues.gender}>
                 <MenuItem value={"male"}>male</MenuItem>
@@ -308,6 +308,7 @@ const UserForm: React.FC<UserFormProps> = ({ visible, onCreate, onCancel }) => {
               </InputLabel>
               <Select
                 multiple
+                variant="standard"
                 required
                 value={formValues.hobbiesName}
                 sx={{
