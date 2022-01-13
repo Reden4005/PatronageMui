@@ -15,6 +15,7 @@ import {
   TextField,
   Select,
   MenuItem,
+  FormControl,
 } from "@mui/material";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { LocalizationProvider, DatePicker } from "@mui/lab";
@@ -69,7 +70,7 @@ const UserForm: React.FC<UserFormProps> = ({ visible, onCreate, onCancel }) => {
     <Modal open={visible}>
       <Card
         sx={{
-          minWidth: "40%",
+          minWidth: "50%",
           position: "absolute",
           top: "10%",
           left: "30%",

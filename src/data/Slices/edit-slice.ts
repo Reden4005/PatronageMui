@@ -11,7 +11,7 @@ const initialEditState = {
   name: "",
   lastName: "",
   email: "",
-  age: 0,
+  age: "",
   gender: "undefined",
   phoneNumber: "",
   address: "",

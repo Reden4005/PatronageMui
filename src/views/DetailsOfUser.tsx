@@ -22,7 +22,7 @@ const DetailsOfUser: React.FC<myProps> = props => {
       <Modal open={props.visible}>
         <Card
           sx={{
-            minWidth: "40%",
+            maxWidth: "40%",
             position: "absolute",
             top: "10%",
             left: "30%",

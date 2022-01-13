@@ -21,7 +21,7 @@ export interface User {
   name: string;
   lastName: string;
   email: string;
-  age: number;
+  age: number | string;
   gender: string;
   phoneNumber: string;
   address: string;

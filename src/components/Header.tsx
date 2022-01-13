@@ -41,7 +41,7 @@ const Header: React.FC = () => {
   return (
     <Box
       sx={{
-        height: "15vh",
+        height: "10vh",
         display: "flex",
         flexWrap: "wrap",
       }}>
@@ -61,6 +61,7 @@ const Header: React.FC = () => {
               <Button
                 onClick={userInputHandler}
                 variant="contained"
+                id="addNewUser"
                 sx={{
                   background: "#B958A5",
                   mr: 3,
