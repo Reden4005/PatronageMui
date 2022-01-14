@@ -3,6 +3,7 @@ import ButtonComponent from "../ButtonComponent";
 import { AppDispatch, RootState } from "../../data/store";
 import { useDispatch, useSelector } from "react-redux";
 import { undoActions } from "../../data/Slices/undo-slice";
+import { buttonStyleContained as style } from "../../styles";
 
 const UndoButton: React.FC = () => {
   const navigate = useNavigate();
@@ -25,6 +26,7 @@ const UndoButton: React.FC = () => {
         onClick={undoIsVisible}
         sx={{ mr: 0 }}
         name="Undo"
+        buttonStyle={style}
       />
     </Link>
   );

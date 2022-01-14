@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import { SxProps } from "@mui/system";
 
 interface ButtonProps {
   variant: "text" | "outlined" | "contained";
@@ -7,20 +8,15 @@ interface ButtonProps {
   sx?: object;
   id?: string;
   disabled?: boolean;
+  buttonStyle: SxProps;
 }
-
-const buttonStyle = {
-  background: "#B958A5",
-  mr: 3,
-  ":hover": { background: "#fdfaf4", color: "#B958A5" },
-};
 
 const ButtonComponent: React.FC<ButtonProps> = props => {
   return (
     <Button
       variant={props.variant}
       onClick={props.onClick}
-      sx={{ ...buttonStyle, ...props.sx }}
+      sx={{ ...props.buttonStyle, ...props.sx }}
       id={props.id}
       disabled={props.disabled}>
       {props.name}

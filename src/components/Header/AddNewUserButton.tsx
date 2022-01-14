@@ -3,6 +3,7 @@ import ButtonComponent from "../ButtonComponent";
 import { AppDispatch } from "../../data/store";
 import { useDispatch } from "react-redux";
 import { formActions } from "../../data/Slices/form-slice";
+import { buttonStyleContained as style } from "../../styles";
 
 const AddNewUserButton: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -16,6 +17,7 @@ const AddNewUserButton: React.FC = () => {
         variant="contained"
         id="addNewUser"
         name="Add new user"
+        buttonStyle={style}
       />
     </Link>
   );

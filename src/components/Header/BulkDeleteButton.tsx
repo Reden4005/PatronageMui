@@ -3,6 +3,7 @@ import ButtonComponent from "../ButtonComponent";
 import { AppDispatch, RootState } from "../../data/store";
 import { useDispatch, useSelector } from "react-redux";
 import { listActions } from "../../data/Slices/list-slice";
+import { buttonStyleContained as style } from "../../styles";
 
 const BulkDeleteButton: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -19,6 +20,7 @@ const BulkDeleteButton: React.FC = () => {
         onClick={bulkDeleteHandler}
         disabled={selectedRowKeys.length === 0}
         name="Bulk delete"
+        buttonStyle={style}
       />
     </Link>
   );

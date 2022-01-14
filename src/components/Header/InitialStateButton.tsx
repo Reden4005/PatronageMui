@@ -3,6 +3,7 @@ import ButtonComponent from "../ButtonComponent";
 import { AppDispatch } from "../../data/store";
 import { useDispatch } from "react-redux";
 import { initialStateActions } from "../../data/Slices/initialState-slice";
+import { buttonStyleContained as style } from "../../styles";
 
 const InitialStateButton: React.FC = () => {
   const navigate = useNavigate();
@@ -17,6 +18,7 @@ const InitialStateButton: React.FC = () => {
         variant="contained"
         onClick={initialStateHandler}
         name="Initial state"
+        buttonStyle={style}
       />
     </Link>
   );
