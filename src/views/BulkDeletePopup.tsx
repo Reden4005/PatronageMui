@@ -11,7 +11,7 @@ import {
   Box,
   Modal,
 } from "@mui/material";
-
+import Backdrop from "../components/Modal";
 interface myProps {
   visible: boolean;
   onOk: () => void;
@@ -31,7 +31,8 @@ const BulkDeletePopup: React.FC<myProps> = props => {
   };
 
   return (
-    <Modal open={props.visible}>
+    // <Modal open={props.visible}>
+    <Backdrop visible={props.visible}>
       <Card
         sx={{
           // width: "30%",
@@ -85,7 +86,8 @@ const BulkDeletePopup: React.FC<myProps> = props => {
           </Box>
         </CardContent>
       </Card>
-    </Modal>
+    </Backdrop>
+    // </Modal>
   );
 };
 
