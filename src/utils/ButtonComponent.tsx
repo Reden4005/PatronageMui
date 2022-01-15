@@ -9,6 +9,7 @@ interface ButtonProps {
   id?: string;
   disabled?: boolean;
   buttonStyle: SxProps;
+  type?: "button" | "submit";
 }
 
 const ButtonComponent: React.FC<ButtonProps> = props => {

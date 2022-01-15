@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import ButtonComponent from "../ButtonComponent";
+import ButtonComponent from "../../utils/ButtonComponent";
 import { AppDispatch } from "../../data/store";
 import { useDispatch } from "react-redux";
 import { initialStateActions } from "../../data/Slices/initialState-slice";

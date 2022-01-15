@@ -1,20 +1,13 @@
 import Header from "../components/Header/Header";
-import TableMui from "../components/Table/TableMui";
+import Table from "../components/Table/Table";
 import { Box } from "@mui/material";
-import { SxProps } from "@mui/system";
+import { mainStyle } from "../styles";
 
-const style: SxProps = {
-  display: "flex",
-  width: "100vw",
-  height: "100vh",
-  flexDirection: "column",
-};
-
-const Main = () => {
+const Main: React.FC = () => {
   return (
-    <Box sx={style}>
+    <Box sx={mainStyle}>
       <Header />
-      <TableMui />
+      <Table />
     </Box>
   );
 };

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ButtonComponent from "../ButtonComponent";
+import ButtonComponent from "../../utils/ButtonComponent";
 import { AppDispatch } from "../../data/store";
 import { useDispatch } from "react-redux";
 import { formActions } from "../../data/Slices/form-slice";

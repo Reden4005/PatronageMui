@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import ButtonComponent from "../ButtonComponent";
+import ButtonComponent from "../../utils/ButtonComponent";
 import { AppDispatch, RootState } from "../../data/store";
 import { useDispatch, useSelector } from "react-redux";
 import { undoActions } from "../../data/Slices/undo-slice";

@@ -12,6 +12,8 @@ import {
   CardContent,
   Box,
 } from "@mui/material";
+import BackdropComponent from "../utils/Backdrop";
+import { popupArrangement } from "../styles";
 
 interface myProps {
   visible: boolean;
@@ -33,15 +35,8 @@ const UndoPopup: React.FC<myProps> = props => {
   };
 
   return (
-    <Modal open={props.visible}>
-      <Card
-        sx={{
-          minWidth: "30%",
-          position: "absolute",
-          top: "20%",
-          left: "35%",
-          "@media (max-width: 600px)": { left: "10%" },
-        }}>
+    <BackdropComponent visible={props.visible}>
+      <Card sx={popupArrangement}>
         <CardContent>
           <Typography variant="h6" sx={{ mb: 2, color: "#B958A5" }}>
             Deleted users:
@@ -116,7 +111,7 @@ const UndoPopup: React.FC<myProps> = props => {
           </Box>
         </CardContent>
       </Card>
-    </Modal>
+    </BackdropComponent>
   );
 };
 

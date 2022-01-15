@@ -25,7 +25,7 @@ const tableStyles: SxProps = {
   },
 };
 
-export default function BasicTable() {
+const Table: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   const actualListOfUsers: GridRowsProp = useSelector(
@@ -47,8 +47,9 @@ export default function BasicTable() {
         );
         dispatch(listActions.bulkDeleteData(selectedRowData));
         dispatch(bulkDeleteActions.addKeys(e));
-        console.log(selectedRowData);
       }}
     />
   );
-}
+};
+
+export default Table;

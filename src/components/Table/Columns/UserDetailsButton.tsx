@@ -1,4 +1,4 @@
-import ButtonComponent from "../../ButtonComponent";
+import ButtonComponent from "../../../utils/ButtonComponent";
 import { Link } from "react-router-dom";
 import { buttonStyleDefault } from "../../../styles";
 import { AppDispatch } from "../../../data/store";
